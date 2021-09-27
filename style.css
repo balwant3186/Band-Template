@@ -1,0 +1,72 @@
+:root {
+    --primary: #000;
+    --secondary: #666;
+}
+
+/* reset styles */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* styles */
+
+body {
+    font-family: 'Rubik Regular';
+}
+
+.primary-button {
+    color: #fff;
+    background-color: var(--primary);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.primary-button:hover {
+    opacity: 0.8;
+}
+
+.secondary-button {
+    color: #fff;
+    background-color: #F44336;
+    border: none;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.tag {
+    background-color: var(--primary);
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+
+@font-face {
+    font-family: "Rubik Regular";
+    src: url(assets/fonts/Rubik-Regular.ttf);
+}
+
+input {
+    padding: 10px 8px;
+}
+
+.caption {
+    font-style: italic;
+    color: var(--secondary);
+}
+
+h3 {
+    font-size: 3em;
+    font-family: 'Rubik Regular';
+}
+
