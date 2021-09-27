@@ -7,6 +7,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 a {
@@ -30,6 +31,7 @@ body {
     padding: 10px;
     cursor: pointer;
     margin: 20px 0 10px 0;
+    text-transform: uppercase;
 }
 
 .primary-button:hover {
@@ -59,6 +61,8 @@ body {
 
 input {
     padding: 10px 8px;
+    width: 100%;
+    margin: 5px 0;
 }
 
 .caption {
@@ -115,8 +119,8 @@ img {
     grid-column: 12/13;
 }
 
-#band {
-    margin-top: 50px;
+#band, #tour, #contact, footer {
+    padding: 50px 0;
 }
 
 #band .grid > p {
@@ -142,8 +146,6 @@ img {
 
 #tour {
     background-color: var(--primary);
-    padding: 50px 0;
-    margin: 30px 0;
 }
 
 #tour h3 {
@@ -170,5 +172,45 @@ img {
     background-color: #fff;
     padding: 15px 20px;
 }
+
+#contact ul,
+#contact form {
+    grid-column: 2 / 12;
+    margin-bottom: 20px;
+}
+
+#contact li {
+    display: flex;
+}
+
+#contact li > p {
+    margin-left: 20px;
+}
+
+#contact form {
+    margin: 20px 0;
+}
+
+#contact form > button {
+    float: right;
+}
+
+footer {
+    text-align: center;
+}
+
+footer i {
+    color: var(--secondary);
+    cursor: pointer;
+    margin: 0 2px;
+}
+
+footer i:hover {
+    opacity: 0.8;
+}
+
+
+
+
 
 
