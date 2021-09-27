@@ -17,7 +17,7 @@ li {
     list-style-type: none;
 }
 
-/* styles */
+/* basic styles */
 
 body {
     font-family: 'Rubik Regular';
@@ -29,6 +29,7 @@ body {
     border: none;
     padding: 10px;
     cursor: pointer;
+    margin: 20px 0 10px 0;
 }
 
 .primary-button:hover {
@@ -63,10 +64,111 @@ input {
 .caption {
     font-style: italic;
     color: var(--secondary);
+    text-align: center;
+    margin: 20px 0;
+}
+
+.caption-normal {
+    color: var(--secondary);
+    margin: 10px 0;
 }
 
 h3 {
-    font-size: 3em;
+    font-size: 2em;
     font-family: 'Rubik Regular';
+    text-align: center;
+    text-transform: uppercase;
 }
+
+img {
+    width: 100%;
+}
+
+
+/* main styles */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.site-nav {
+    background-color: var(--primary);
+    padding: 10px 15px;
+}
+
+.site-nav ul li {
+    grid-column: 1/9;
+    display: none;
+}
+
+.site-nav ul li:nth-child(1){
+    display: block;
+}
+
+.site-nav a {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.site-nav .search-icon {
+    grid-column: 12/13;
+}
+
+#band {
+    margin-top: 50px;
+}
+
+#band .grid > p {
+    grid-column: 2 / 12;
+}
+
+.band-members {
+    grid-row: 2;
+    grid-column: 2 / 12;
+    margin: 20px 0;
+}
+
+.band-members li {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.band-members p {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#tour {
+    background-color: var(--primary);
+    padding: 50px 0;
+    margin: 30px 0;
+}
+
+#tour h3 {
+    color: #fff;
+}
+
+#tour ul {
+    grid-column: 2 / 12;
+    margin-bottom: 30px;
+}
+
+#tour li {
+    background-color: #fff;
+    border-bottom: 1px solid #f2f2f2;
+    padding: 10px 20px;
+}
+
+.tour-location {
+    grid-column: 2 / 12;
+    margin-bottom: 20px;
+}
+
+.tour-info {
+    background-color: #fff;
+    padding: 15px 20px;
+}
+
 
